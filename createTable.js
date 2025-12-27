@@ -18,11 +18,11 @@ const sequelize = require('./sequelize')
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // create all inventory related tables
-require('./models/Inventory/inventoryAuthModel')
-require('./models/Inventory/categoryModel')
-require('./models/Inventory/inventoryModel')
-require('./models/Inventory/inventoryLogModel')
-require('./models/Inventory/locationsModel')
+// require('./models/Inventory/inventoryAuthModel')
+// require('./models/Inventory/categoryModel')
+// require('./models/Inventory/inventoryModel')
+// require('./models/Inventory/inventoryLogModel')
+// require('./models/Inventory/locationsModel')
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

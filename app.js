@@ -17,6 +17,8 @@ const commentRouter = require('./routers/projectManagement/commentRouter')
 const logRouter = require('./routers/projectManagement/logRouter')
 const todoListRouter = require('./routers/projectManagement/todoListRouter')
 const departmentRouter = require('./routers/departmentRouter')
+const inventoryRouter = require('./routers/inventoryRouter')
+
 
 // Use Helmet for basic security
 app.use(helmet())
@@ -133,6 +135,8 @@ app.use('/api/v1/pm/comment', commentRouter)
 app.use('/api/v1/pm/log', logRouter)
 app.use('/api/v1/pm/todo', todoListRouter)
 app.use('/api/v1/department', departmentRouter)
+app.use('/api/v1/inventory', inventoryRouter)
+
 // need to add models
 
 module.exports = app
