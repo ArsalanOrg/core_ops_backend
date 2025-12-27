@@ -1,0 +1,10 @@
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - run: | 
+          cd ~/api/core_ops_backend
+          git pull origin main
+          npm install
+          pm2 restart server.js --name core_ops_backend
