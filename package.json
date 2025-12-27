@@ -1,0 +1,43 @@
+{
+  "name": "core_ops_backend",
+  "version": "1.0.0",
+  "description": "An ERP app that allows companies to solve project management issues in day to day life.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "ERP",
+    "web-based-erp",
+    "projectManagement"
+  ],
+  "author": "ArsalanRehman",
+  "license": "ISC",
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-validator": "^7.1.0",
+    "fontkit": "^2.0.4",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "msnodesqlv8": "^4.2.1",
+    "mssql": "^11.0.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.2",
+    "pdf-lib": "^1.17.1",
+    "request-ip": "^3.3.0",
+    "sequelize": "^6.37.3",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "tedious": "^18.3.0",
+    "web-push": "^3.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/mssql": "^9.1.5"
+  }
+}
