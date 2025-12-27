@@ -27,3 +27,4 @@ module.exports = {
   Location,
   AuthorizedUser,
 }
+// — End of Associations —
