@@ -1,10 +1,23 @@
+name: Deploy (self-hosted)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
-      - run: | 
-          cd ~/api/core_ops_backend
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy
+        shell: bash
+        run: |
+          set -e
+          cd /home/arsalan/api/core_ops_backend
           git pull origin main
-          npm install
-          pm2 restart server.js --name core_ops_backend
+          npm ci || npm install
+          pm2 restart core_ops_backend || pm2 start server.js --name core_ops_backend
+          pm2 save
