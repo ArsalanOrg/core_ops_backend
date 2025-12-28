@@ -7,7 +7,7 @@ const {
 const socketAuth = require('./socketAuth')
 
 const configureSocketIO = (server) => {
-  const allowed = ['https://demo.arsalanrehman.online', 'http://localhost:3000']
+  const allowed = ['https://coreops.arsalanrehman.online', 'http://10.1.205.2:3000','http://localhost:3000'] // Adjust for production
   const io = new Server(server, {
     cors: {
       origin: allowed, // Adjust for production

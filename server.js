@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const https = require('https')
 const http = require('http')
 const fs = require('fs')
-// const configureSocketIO = require('./utils/socket')
+const configureSocketIO = require('./utils/socket')
 
 dotenv.config({ path: './config.env' })
 
@@ -74,7 +74,7 @@ if (fs.existsSync(keyPath) && fs.existsSync(certPath)) {
 }
 
 // Start Socket.IO server
-// configureSocketIO(server)
+configureSocketIO(server)
 
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`)
