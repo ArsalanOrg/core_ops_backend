@@ -19,6 +19,7 @@ const todoListRouter = require('./routers/projectManagement/todoListRouter')
 const departmentRouter = require('./routers/departmentRouter')
 const inventoryRouter = require('./routers/inventoryRouter')
 const chatRouter = require('./routers/chatRouter')
+const productionRouter = require('./routers/productionRouter')
 
 
 // Use Helmet for basic security
@@ -33,6 +34,7 @@ const corsOptions = {
     'http://localhost:3002',
     'http://localhost:3003',
     'http://localhost:3004',
+    'https://coreops.arsalanrehman.online',
     'http://192.168.3.10:3000',
     'http://192.168.109.139:3000',
   ],
@@ -128,6 +130,8 @@ app.use('/api/v1/pm/todo', todoListRouter)
 app.use('/api/v1/department', departmentRouter)
 app.use('/api/v1/inventory', inventoryRouter)
 app.use('/api/v1/chat', chatRouter)
+app.use('/api/v1/production', productionRouter)
+
 
 // need to add models
 

@@ -25,6 +25,14 @@ const sequelize = require('./sequelize')
 // require('./models/Inventory/locationsModel')
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// create all production related tables
+// require('./models/production/machineModel')
+// require('./models/production/materialModel')
+// require('./models/production/productionRecordModel')
+// require('./models/production/productionLogModel')
+// require('./models/production/productionAuthModel')
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Function to sync the Product model with the database
 async function createTable() {
